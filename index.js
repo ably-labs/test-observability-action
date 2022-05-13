@@ -32,12 +32,8 @@ try {
 			iteration: i + 1
 		}
 
-		if (process.env.GITHUB_BASE_REF) {
-			body.github_base_ref = process.env.GITHUB_BASE_REF;
-		}
-		if (process.env.GITHUB_HEAD_REF) {
-			body.github_head_ref = process.env.GITHUB_HEAD_REF;
-		}
+			body.github_base_ref = process.env.GITHUB_BASE_REF || null;
+			body.github_head_ref = process.env.GITHUB_HEAD_REF || null;
 
 		const headers = {
 			"Test-Observability-Auth-Key": auth
