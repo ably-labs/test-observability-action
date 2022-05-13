@@ -43,6 +43,8 @@ try {
 			"Test-Observability-Auth-Key": auth
 		};
 
+                console.log(body);
+
 		const options = {
 			method:'post',
 			url: url.toString(),
