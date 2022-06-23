@@ -1,3 +1,5 @@
+⚠️ This project has moved to [ably/test-observability-action](https://github.com/ably/test-observability-action).
+
 # Test Observability Action
 
 An action to push junit files to Ably's test observability server.
